@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from '../components/images/logo.png';
   
 
 const Navbar = () => {
@@ -8,7 +9,7 @@ const Navbar = () => {
     <nav className="bg-gray-800 p-4">
       <div className="container mx-auto flex justify-between md:justify-around items-center">
       <div className="flex items-center">
-        <img src="./images/logo.png" alt="My Portfolio Logo" className="h-12 w-auto" />
+        <img src={logo} alt="My Portfolio Logo" className="h-12 w-auto"/>
       </div>
 
         <div className="hidden md:flex space-x-4">

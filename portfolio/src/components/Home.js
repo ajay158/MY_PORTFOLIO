@@ -1,12 +1,12 @@
 import React from 'react';
-
+import hero from '../components/images/hero.png';
 
 const Home = () => {
   return (
     <div className="">
       <header className="bg-gray-800 text-white py-10">
       <div>
-        <img src="./images/hero.png" alt="hero.png"/>
+        <img src={hero} alt="hero.png"/>
     </div>
      <div className="container mx-auto text-center">
         <h1 className="text-5xl font-bold mb-4">Hi, I'm Ajay</h1>
