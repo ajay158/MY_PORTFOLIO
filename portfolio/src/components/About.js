@@ -17,15 +17,15 @@ const About = () => {
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
         
-        <div className="flex flex-col items-center mb-10">
+        <div className="flex flex-col mb-10 w-full md:w-2/3 items-center mx-auto">
           <img src={hero} alt="aboutimage" className="w-40 h-auto rounded-lg shadow-lg mb-8 " />
-          <p className="text-lg mb-4 w-3/4">
+          <p className="text-lg mb-4">
             Hello! I'm Ajay, a passionate Full Stack Developer with a love for creating beautiful and functional web applications. With a strong foundation in both frontend and backend technologies, I bring ideas to life and strive for excellence in every project I undertake.
           </p>
         </div>
      <div className="flex flex-col items-center mb-10">
-            <p className="text-lg mb-4">
-                I am highly confident in my abilities with various programming languages and frameworks, always eager to learn and grow in this ever-evolving field.
+            <p className="text-lg mb-6">
+            I have become confident using the following technologies.
              </p>
         <div className="flex flex-wrap justify-center gap-4 mb-8">
             <img src={html} alt="HTML" className="w-16 h-16 " />

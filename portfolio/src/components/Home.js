@@ -9,11 +9,11 @@ const Home = () => {
         <div className="container mx-auto px-4 lg:px-60 flex flex-col-reverse lg:flex-row justify-between items-center">
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold mb-4">Hi, I'm Ajay</h1>
-            <p className="text-xl">Full Stack Developer</p>
-            <p>I design and code simple, beautiful things. I love bringing ideas to life with my work.</p>
+            <p className="text-xl">Front-End Developer</p>
+            <p className='mt-3'>I design and code simple, beautiful things. I love bringing ideas to life with my work.</p>
             <div className="flex justify-center lg:justify-start gap-3 mt-6">
-              <button className="bg-blue-500 text-white py-2 px-4 rounded">Say Hello</button>
-              <button className="bg-gray-500 text-white py-2 px-4 rounded">Hire Me</button>
+              <button className=" font-medium bg-white border-blue-700 text-black py-2 px-4 rounded hover:bg-blue-500 hover:text-white transition duration-300">Say Hello</button>
+              <button className="font-medium bg-blue-500 text-white py-2 px-4 rounded hover:bg-white hover:text-black transition duration-300">Resume</button>
             </div>
           </div>
           <div className="mb-6 lg:mb-0 lg:ml-6">
