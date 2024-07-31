@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-gray-800 p-4">
-      <div className="container mx-auto flex justify-between md:justify-around items-center">
+      <div className="container mx-auto flex justify-between md:justify-around md:items-center">
       <div className="flex items-center cursor-pointer">
         <img src={logo} alt="My Portfolio Logo" className="h-12 w-auto"/>
       </div>
