@@ -9,13 +9,13 @@ const Navbar = () => {
     <nav className="bg-gray-800 p-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between md:justify-around md:items-center">
       <div className="flex items-center cursor-pointer">
-        <img src={logo} alt="My Portfolio Logo" className="h-12 w-auto"/>
+        <a href=""> <img src={logo} alt="My Portfolio Logo" className="h-12 w-auto"/></a>
       </div>
 
         <div className="hidden md:flex space-x-4">
           <a href="" className="text-lg text-gray-300 hover:text-white hover:font-medium">Home</a>
           <a href="#about" className="text-lg text-gray-300 hover:text-white hover:font-medium">About</a>
-          <a href="#projects" className="text-lg text-gray-300 hover:text-white hover:font-medium">Project</a>
+          <a href="#project" className="text-lg text-gray-300 hover:text-white hover:font-medium">Project</a>
           <a href="#contact" className="text-lg text-gray-300 hover:text-white hover:font-medium">Contact</a>
         </div>
         

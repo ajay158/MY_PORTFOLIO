@@ -1,8 +1,8 @@
 const Contact = () => {
     return (
-      <section className="bg-gray-900 py-20">
+      <section id="contact" className="bg-gray-100 py-20">
         <div className="container mx-auto px-4 text-white">
-          <h2 className="text-4xl font-bold text-center mb-12">Contact Me</h2>
+          <h2 className="text-4xl font-bold text-center mb-12 text-black">Contact Me</h2>
           
           <div className="flex flex-col md:flex-row items-center justify-around mb-10">
             <div className="w-full md:w-2/3">
