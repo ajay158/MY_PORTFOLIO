@@ -4,79 +4,63 @@ import prj2 from '../components/images/project/prj2.png';
 import prj3 from '../components/images/project/prj3.png';
 import prj4 from '../components/images/project/prj4.png';
 import prj5 from '../components/images/project/prj5.png';
-
-const imageMap = {
-  prj1,
-  prj2,
-  prj3,
-  prj4,
-  prj5,
-};
-
-const urlMap = {
-  myPortfolio: 'https://your-todo-app-link.com',
-  todoApp: 'https://your-todo-app-link.com',
-  blogPage: 'https://ajay158.github.io/My_Blog/',
-  mySecondTeacher: 'https://ajay158.github.io/My-Second-Teacher-MST---Clone-Website/',
-  hotelWebsite: 'https://ajay158.github.io/A-Holiday-Trip',
-};
+import prj6 from '../components/images/project/prj6.png';
 
 const projects = [
   {
     title: 'MY PORTFOLIO',
     description: 'A simple Todo App built using ReactJS, Tailwind CSS, PHP, and MySQL.',
     description1: 'Tech Stack - HTML and CSS.',
-    imgUrl: 'prj1',
+    imgUrl: prj1,
     link: 'https://your-todo-app-link.com',
   },
   {
     title: 'TODO APP',
     description: 'A simple Todo App built using ReactJS, Tailwind CSS, PHP, and MySQL.',
     description1: 'Tech Stack - HTML and CSS.',
-    imgUrl: 'prj2', 
+    imgUrl: prj2, 
     link: 'https://your-todo-app-link.com',
   },
   {
     title: 'BLOG PAGE',
     description: 'A simple Todo App built using ReactJS, Tailwind CSS, PHP, and MySQL.',
     description1: 'Tech Stack - HTML and CSS.',
-    imgUrl: 'prj3',
+    imgUrl: prj3,
     link: 'https://ajay158.github.io/My_Blog/',
   },
   {
     title: 'MY SECOND TEACHER (MST)',
     description: 'A simple Todo App built using ReactJS, Tailwind CSS, PHP, and MySQL.',
     description1: 'Tech Stack - HTML and CSS.',
-    imgUrl: 'prj4',
+    imgUrl: prj4,
     link: 'https://ajay158.github.io/My-Second-Teacher-MST---Clone-Website/',
   },
   {
-    title: 'Todo App',
+    title: 'TIC TAC TOE GAME',
     description: 'A simple Todo App built using ReactJS, Tailwind CSS, PHP, and MySQL.',
     description1: 'Tech Stack - HTML and CSS.',
-    imgUrl: 'prj5',
-    link: 'https://your-todo-app-link.com',
+    imgUrl: prj5,
+    link: 'https://ajay158.github.io/Tic-Tac-Toe-Game/',
   },
   {
     title: 'HOTEL WEBSITE',
     description: 'A simple Todo App built using ReactJS, Tailwind CSS, PHP, and MySQL.',
     description1: 'Tech Stack - HTML and CSS.',
-    imgUrl: 'pr5',
+    imgUrl: prj6,
     link: 'https://ajay158.github.io/A-Holiday-Trip',
   }
-
 ];
 
 const Project = () => {
   return (
-    <div id="projects" className="bg-gray-100 text-white py-20">
+    <div id="project" className="bg-gray-100 text-white py-20">
       <div className="container mx-auto px-4 lg:px-20">
         <h2 className="text-4xl font-bold mb-12 text-center text-black">My Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="group relative bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-transform hover:scale-105">
               <img
-                src={imageMap[project.imgUrl]}
+                src={project.imgUrl}
                 alt={project.title}
                 className="w-full h-48 object-cover"
               />
@@ -91,7 +75,7 @@ const Project = () => {
                   {project.description1}
                 </p>
                 <a 
-                  href={imageMap[project.imglink]}
+                  href={project.link} 
                   className="cursor-pointer text-blue-500 hover:underline"
                   target="_blank" 
                   rel="noopener noreferrer"

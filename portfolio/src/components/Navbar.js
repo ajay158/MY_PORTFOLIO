@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../components/images/logo.png';
+import { Link } from 'react-scroll';
   
 
 const Navbar = () => {
