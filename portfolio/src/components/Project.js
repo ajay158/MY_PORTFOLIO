@@ -12,7 +12,7 @@ const projects = [
     description: 'I crafted my own personal portfolio using ReactJS and Tailwind CSS, showcasing a unique blend of design and functionality.',
     description1: 'Tech Stack - Reactjs and Tailwind Css.',
     imgUrl: prj1,
-    link: 'https://your-todo-app-link.com',
+    link: 'https://ajaykumarshahuportfolio.netlify.app/',
   },
   {
     title: 'TODO APP',
