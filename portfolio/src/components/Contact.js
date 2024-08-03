@@ -6,11 +6,11 @@ const Contact = () => {
     name: "",
     email: "",
     message: "",
-    subject: "" // Added subject field if you want to use it
+    subject: "" 
   });
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value }); // Use 'name' instead of 'id'
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
@@ -18,10 +18,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "gmail", // Replace with your EmailJS service ID
-        "template_jzwceqx", // Replace with your EmailJS template ID
+        "gmail", 
+        "template_jzwceqx", 
         e.target,
-        "0ZsvfOp81ktqJ_0uE" // Replace with your EmailJS user ID
+        "0ZsvfOp81ktqJ_0uE" 
       )
       .then(
         (result) => {
@@ -34,23 +34,23 @@ const Contact = () => {
         }
       );
 
-    setFormData({ name: "", email: "", message: "", subject: "" }); // Reset form after submission
+    setFormData({ name: "", email: "", message: "", subject: "" }); 
   };
 
   return (
-    <section id="contact" className="bg-gray-100 py-20">
+    <section id="contact" className="bg-gray-100">
       <div className="container mx-auto px-4 text-white">
         <h2 className="text-4xl font-bold text-center mb-12 text-black">Contact Me</h2>
         
         <div className="flex flex-col md:flex-row items-center justify-around mb-10">
-          <div className="w-full md:w-2/3">
+          <div className="w-full">
             <form className="bg-gray-800 p-8 rounded-lg shadow-lg" onSubmit={handleSubmit}>
               <div className="mb-4">
                 <label className="block text-lg font-medium mb-2" htmlFor="name">Name</label>
                 <input
                   type="text"
                   id="name"
-                  name="name" // Match this with the template variable
+                  name="name" 
                   className="w-full px-4 py-2 text-gray-900 rounded-lg"
                   placeholder="Your Name"
                   value={formData.name}
@@ -63,7 +63,7 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
-                  name="email" // Match this with the template variable
+                  name="email" 
                   className="w-full px-4 py-2 text-gray-900 rounded-lg"
                   placeholder="Your Email"
                   value={formData.email}
@@ -75,7 +75,7 @@ const Contact = () => {
                 <label className="block text-lg font-medium mb-2" htmlFor="message">Message</label>
                 <textarea
                   id="message"
-                  name="message" // Match this with the template variable
+                  name="message" 
                   className="w-full px-4 py-2 text-gray-900 rounded-lg"
                   rows="4"
                   placeholder="Your Message"
@@ -89,7 +89,7 @@ const Contact = () => {
                 <input
                   type="text"
                   id="subject"
-                  name="subject" // Match this with the template variable if used
+                  name="subject"
                   className="w-full px-4 py-2 text-gray-900 rounded-lg"
                   placeholder="Subject"
                   value={formData.subject}

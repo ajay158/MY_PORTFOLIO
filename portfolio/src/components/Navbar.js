@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import logo from '../components/images/logo.png';
-import { Link } from 'react-scroll';
-  
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="bg-gray-800 p-4 sticky top-0 z-50">
-      <div className="container mx-auto flex justify-between md:justify-around md:items-center">
+      <div className="container mx-auto flex justify-around items-center">
       <div className="flex items-center cursor-pointer">
         <a href=""> <img src={logo} alt="My Portfolio Logo" className="h-12 w-auto"/></a>
       </div>

@@ -56,7 +56,7 @@ const Project = () => {
     <div id="project" className="bg-gray-100 text-white py-20">
       <div className="container mx-auto px-4 lg:px-20">
         <h2 className="text-4xl font-bold mb-12 text-center text-black">My Projects</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="relative bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-transform hover:scale-105">
               <img
