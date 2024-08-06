@@ -1,7 +1,5 @@
 # My_Portfolio
 
-# Portfolio Website
-
 # Overview
 
 I have created a portfolio website using ReactJS for the structure and interactivity, and Tailwind CSS for styling. The website is designed to showcase my work, skills, and provide a way for visitors to contact me. For handling messages from the contact form, I used EmailJS. This service allows sending emails using client-side technologies, eliminating the need for a backend server. By connecting EmailJS to a supported email service, I can trigger emails through a simple and efficient API.
